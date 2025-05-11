@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-<!--   <img src="./docs/static/img/logo.png" alt="Logo" width="200"> -->
+  <img src="./docs/static/img/logo.png" alt="Ghost Logo" width="200">
   <h1 align="center">TheGhost</h1>
 </div>
 
