@@ -30,8 +30,7 @@ export interface CommandAction extends TheGhostActionEvent<"run"> {
   };
 }
 
-export interface AssistantMessageAction
-  extends TheGhostActionEvent<"message"> {
+export interface AssistantMessageAction extends TheGhostActionEvent<"message"> {
   source: "agent";
   args: {
     thought: string;
