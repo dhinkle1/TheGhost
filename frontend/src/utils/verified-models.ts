@@ -12,6 +12,10 @@ export const VERIFIED_MODELS = [
 // LiteLLM does not return OpenAI models with the provider, so we list them here to set them ourselves for consistency
 // (e.g., they return `gpt-4o` instead of `openai/gpt-4o`)
 export const VERIFIED_OPENAI_MODELS = [
+  "gpt-4.1",
+  "gpt-4.1-mini",
+  "gpt-4.1-nano",
+
   "gpt-4o",
   "gpt-4o-mini",
   "gpt-4-turbo",
