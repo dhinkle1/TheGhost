@@ -60,7 +60,7 @@ async def list_files(
 
     To list files:
     ```sh
-    curl http://localhost:3000/api/conversations/{conversation_id}/list-files
+    curl http://localhost:4000/api/conversations/{conversation_id}/list-files
     ```
 
     Args:
@@ -138,7 +138,7 @@ async def select_file(file: str, request: Request) -> FileResponse | JSONRespons
 
     To select a file:
     ```sh
-    curl http://localhost:3000/api/conversations/{conversation_id}select-file?file=<file_path>
+    curl http://localhost:4000/api/conversations/{conversation_id}select-file?file=<file_path>
     ```
 
     Args:

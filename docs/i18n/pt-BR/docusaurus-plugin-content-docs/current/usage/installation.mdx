@@ -65,13 +65,13 @@ docker run -it --rm --pull=always \
     -e LOG_ALL_EVENTS=true \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v ~/.openhands-state:/.openhands-state \
-    -p 3000:3000 \
+    -p 4000:4000 \
     --add-host host.docker.internal:host-gateway \
     --name openhands-app \
     docker.all-hands.dev/all-hands-ai/openhands:0.37
 ```
 
-Você encontrará o TheGhost rodando em http://localhost:3000!
+Você encontrará o TheGhost rodando em http://localhost:4000!
 
 Você também pode [conectar o TheGhost ao seu sistema de arquivos local](https://docs.all-hands.dev/modules/usage/runtimes/docker#connecting-to-your-filesystem),
 executar o TheGhost em um [modo headless](https://docs.all-hands.dev/modules/usage/how-to/headless-mode) programável,

@@ -273,4 +273,4 @@ class DaytonaRuntime(ActionExecutionClient):
 
     @property
     def additional_agent_instructions(self) -> str:
-        return f'When showing endpoints to access applications for any port, e.g. port 3000, instead of localhost:3000, use this format: {self._construct_api_url(3000)}.'
+        return f'When showing endpoints to access applications for any port, e.g. port 3000, instead of localhost:4000, use this format: {self._construct_api_url(3000)}.'

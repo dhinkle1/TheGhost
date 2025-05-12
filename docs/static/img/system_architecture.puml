@@ -50,7 +50,7 @@ node backend{
         component Server
 
         'defined in server/server.py, port is defined at startup with uvicorn
-        interface "Client WS\n(:3000/ws)" as client_socket
+        interface "Client WS\n(:4000/ws)" as client_socket
         client_socket - Server
 
 

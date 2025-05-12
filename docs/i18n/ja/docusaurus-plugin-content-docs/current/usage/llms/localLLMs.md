@@ -52,11 +52,11 @@ docker run \
     -e WORKSPACE_MOUNT_PATH=$WORKSPACE_BASE \
     -v $WORKSPACE_BASE:/opt/workspace_base \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -p 3000:3000 \
+    -p 4000:4000 \
     ghcr.io/all-hands-ai/openhands:main
 ```
 
-これで `http://localhost:3000/` に接続できるはずです。
+これで `http://localhost:4000/` に接続できるはずです。
 
 ### ソースからのビルド
 
@@ -74,7 +74,7 @@ WORKSPACE_DIR="$(pwd)/workspace"
 
 必要に応じて、`LLM_MODEL` を選択したものに置き換えてください。
 
-以上で完了です！これで、Docker なしで `make run` を使用して TheGhost を起動できます。`http://localhost:3000/` に接続できるはずです。
+以上で完了です！これで、Docker なしで `make run` を使用して TheGhost を起動できます。`http://localhost:4000/` に接続できるはずです。
 
 ## モデルの選択
 

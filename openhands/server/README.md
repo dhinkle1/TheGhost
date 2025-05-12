@@ -33,7 +33,7 @@ uvicorn openhands.server.listen:app --reload --port 3000
 You can use [`websocat`](https://github.com/vi/websocat) to test the server.
 
 ```sh
-websocat ws://127.0.0.1:3000/ws
+websocat ws://127.0.0.1:4000/ws
 {"action": "start", "args": {"task": "write a bash script that prints hello"}}
 ```
 

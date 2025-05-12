@@ -5,7 +5,7 @@ O TheGhost oferece um modo de Interface Gráfica do Usuário (GUI) para interagi
 ## Instalação e Configuração
 
 1. Siga as instruções de instalação para instalar o TheGhost.
-2. Após executar o comando, acesse o TheGhost em [http://localhost:3000](http://localhost:3000).
+2. Após executar o comando, acesse o TheGhost em [http://localhost:4000](http://localhost:4000).
 
 ## Interagindo com a GUI
 

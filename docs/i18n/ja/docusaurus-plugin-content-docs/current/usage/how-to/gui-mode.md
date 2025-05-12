@@ -5,7 +5,7 @@ TheGhostは、AIアシスタントとの対話のためのグラフィカルユ�
 ## インストールとセットアップ
 
 1. インストール手順に従ってTheGhostをインストールします。
-2. コマンドを実行した後、[http://localhost:3000](http://localhost:3000)でTheGhostにアクセスします。
+2. コマンドを実行した後、[http://localhost:4000](http://localhost:4000)でTheGhostにアクセスします。
 
 ## GUIでの対話
 

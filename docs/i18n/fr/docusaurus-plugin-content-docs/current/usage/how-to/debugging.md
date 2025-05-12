@@ -28,7 +28,7 @@ Le fichier `launch.json` suivant permettra de déboguer les éléments de l'agen
                 "--reload-exclude",
                 "${workspaceFolder}/workspace",
                 "--port",
-                "3000"
+                "4000"
             ],
             "justMyCode": false
         }

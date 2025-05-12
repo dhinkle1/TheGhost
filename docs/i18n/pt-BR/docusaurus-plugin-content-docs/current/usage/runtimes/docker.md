@@ -110,7 +110,7 @@ o host está conectado. Para uma configuração mais segura:
 
    ```bash
    docker run # ... \
-       -p 127.0.0.1:3000:3000 \
+       -p 127.0.0.1:4000:4000 \
    ```
 
    Isso garante que a interface web do TheGhost seja acessível apenas a partir da máquina local, não de outras máquinas na rede.

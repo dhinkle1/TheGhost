@@ -75,13 +75,13 @@ docker run -it \
     -e WORKSPACE_MOUNT_PATH=$WORKSPACE_BASE \
     -v $WORKSPACE_BASE:/opt/workspace_base \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -p 3000:3000 \
+    -p 4000:4000 \
     --add-host host.docker.internal:host-gateway \
     --name openhands-app-$(date +%Y%m%d%H%M%S) \
     ghcr.io/all-hands-ai/openhands:main
 ```
 
-你会发现 TheGhost 在 [http://localhost:3000](http://localhost:3000) 运行，并可以访问 `./workspace`。要让 TheGhost 操作你的代码，请将代码放在 `./workspace` 中。
+你会发现 TheGhost 在 [http://localhost:4000](http://localhost:4000) 运行，并可以访问 `./workspace`。要让 TheGhost 操作你的代码，请将代码放在 `./workspace` 中。
 
 TheGhost 只会访问这个工作区文件夹。它在一个安全的 docker 沙盒中运行，不会影响你系统的其他部分。
 

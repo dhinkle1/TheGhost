@@ -28,7 +28,7 @@ The following `launch.json` will allow debugging the agent, controller and serve
                 "--reload-exclude",
                 "${workspaceFolder}/workspace",
                 "--port",
-                "3000"
+                "4000"
             ],
             "justMyCode": false
         }

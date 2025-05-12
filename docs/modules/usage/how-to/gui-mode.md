@@ -5,7 +5,7 @@ TheGhost provides a Graphical User Interface (GUI) mode for interacting with the
 ## Installation and Setup
 
 1. Follow the installation instructions to install TheGhost.
-2. After running the command, access TheGhost at [http://localhost:3000](http://localhost:3000).
+2. After running the command, access TheGhost at [http://localhost:4000](http://localhost:4000).
 
 ## Interacting with the GUI
 

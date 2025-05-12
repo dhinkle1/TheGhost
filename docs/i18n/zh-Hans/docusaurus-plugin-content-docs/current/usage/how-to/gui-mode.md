@@ -5,7 +5,7 @@ TheGhost 提供了一个图形用户界面(GUI)模式，用于与 AI 助手交�
 ## 安装和设置
 
 1. 按照安装说明安装 TheGhost。
-2. 运行命令后，通过 [http://localhost:3000](http://localhost:3000) 访问 TheGhost。
+2. 运行命令后，通过 [http://localhost:4000](http://localhost:4000) 访问 TheGhost。
 
 ## 与 GUI 交互
 

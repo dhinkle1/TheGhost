@@ -53,11 +53,11 @@ docker run \
     -e WORKSPACE_MOUNT_PATH=$WORKSPACE_BASE \
     -v $WORKSPACE_BASE:/opt/workspace_base \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -p 3000:3000 \
+    -p 4000:4000 \
     ghcr.io/all-hands-ai/openhands:main
 ```
 
-Vous devriez maintenant pouvoir vous connecter à `http://localhost:3000/`
+Vous devriez maintenant pouvoir vous connecter à `http://localhost:4000/`
 
 ### Compiler à partir des sources
 
@@ -75,7 +75,7 @@ WORKSPACE_DIR="$(pwd)/workspace"
 
 Remplacez `LLM_MODEL` par celui de votre choix si nécessaire.
 
-Fini ! Vous pouvez maintenant démarrer TheGhost avec : `make run` sans Docker. Vous devriez maintenant pouvoir vous connecter à `http://localhost:3000/`
+Fini ! Vous pouvez maintenant démarrer TheGhost avec : `make run` sans Docker. Vous devriez maintenant pouvoir vous connecter à `http://localhost:4000/`
 
 ## Sélection de votre modèle
 

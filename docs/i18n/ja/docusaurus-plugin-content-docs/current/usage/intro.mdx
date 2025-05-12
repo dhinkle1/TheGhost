@@ -75,13 +75,13 @@ docker run -it \
     -e WORKSPACE_MOUNT_PATH=$WORKSPACE_BASE \
     -v $WORKSPACE_BASE:/opt/workspace_base \
     -v /var/run/docker.sock:/var/run/docker.sock \
-    -p 3000:3000 \
+    -p 4000:4000 \
     --add-host host.docker.internal:host-gateway \
     --name openhands-app-$(date +%Y%m%d%H%M%S) \
     ghcr.io/all-hands-ai/openhands:main
 ```
 
-TheGhostは[http://localhost:3000](http://localhost:3000)で動作し、`./workspace`にアクセスできます。TheGhostにコードを操作させるには、そのコードを`./workspace`に配置してください。
+TheGhostは[http://localhost:4000](http://localhost:4000)で動作し、`./workspace`にアクセスできます。TheGhostにコードを操作させるには、そのコードを`./workspace`に配置してください。
 
 TheGhostはこのワークスペースフォルダにのみアクセスできます。Dockerの安全なサンドボックス内で実行されるため、システムの他の部分には影響を与えません。
 

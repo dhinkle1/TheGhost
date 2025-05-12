@@ -194,7 +194,7 @@ Exemples :
      web:
        build: .
        ports:
-         - "3000:3000"
+         - "4000:4000"
    ```
 
 N'oubliez pas de :

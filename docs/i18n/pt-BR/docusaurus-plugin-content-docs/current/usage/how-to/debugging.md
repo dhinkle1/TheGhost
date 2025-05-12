@@ -28,7 +28,7 @@ O seguinte `launch.json` permitirá a depuração dos elementos do agente, contr
                 "--reload-exclude",
                 "${workspaceFolder}/workspace",
                 "--port",
-                "3000"
+                "4000"
             ],
             "justMyCode": false
         }

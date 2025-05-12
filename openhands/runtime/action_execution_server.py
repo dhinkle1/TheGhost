@@ -974,7 +974,7 @@ if __name__ == '__main__':
 
         To list files:
         ```sh
-        curl -X POST -d '{"path": "/"}' http://localhost:3000/list_files
+        curl -X POST -d '{"path": "/"}' http://localhost:4000/list_files
         ```
 
         Args:

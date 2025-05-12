@@ -21,7 +21,7 @@ TheGhost 仅通过 WSL 支持 Windows。请确保在 WSL 终端中运行所有�
        -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:latest \
        -v /var/run/docker.sock:/var/run/docker.sock \
        -v ~/.openhands-state:/.openhands-state \
-       -p 3000:3000 \
+       -p 4000:4000 \
        -p 41234:41234 \
        --add-host host.docker.internal:host-gateway \
        --name openhands-app \

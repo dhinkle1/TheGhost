@@ -410,7 +410,7 @@ async def test_unsafe_bash_command(temp_dir: str):
         ),
         (  # Test BrowseInteractiveAction
             BrowseInteractiveAction(
-                browser_actions='goto("http://localhost:3000")',
+                browser_actions='goto("http://localhost:4000")',
                 thought='browsing to localhost',
                 browsergym_send_msg_to_user='browsergym',
             ),
@@ -428,7 +428,7 @@ async def test_unsafe_bash_command(temp_dir: str):
                     function=Function(
                         name=ActionType.BROWSE_INTERACTIVE,
                         arguments={
-                            'browser_actions': 'goto("http://localhost:3000")',
+                            'browser_actions': 'goto("http://localhost:4000")',
                             'browsergym_send_msg_to_user': 'browsergym',
                         },
                     ),
@@ -437,7 +437,7 @@ async def test_unsafe_bash_command(temp_dir: str):
         ),
         (  # Test BrowseURLAction
             BrowseURLAction(
-                url='http://localhost:3000', thought='browsing to localhost'
+                url='http://localhost:4000', thought='browsing to localhost'
             ),
             [
                 Message(
@@ -452,7 +452,7 @@ async def test_unsafe_bash_command(temp_dir: str):
                     type='function',
                     function=Function(
                         name=ActionType.BROWSE,
-                        arguments={'url': 'http://localhost:3000'},
+                        arguments={'url': 'http://localhost:4000'},
                     ),
                 ),
             ],
@@ -487,7 +487,7 @@ def test_parse_action(action, expected_trace):
         (
             BrowserOutputObservation(
                 content='browser output content',
-                url='http://localhost:3000',
+                url='http://localhost:4000',
                 screenshot='screenshot',
                 trigger_by_action=ActionType.BROWSE,
             ),

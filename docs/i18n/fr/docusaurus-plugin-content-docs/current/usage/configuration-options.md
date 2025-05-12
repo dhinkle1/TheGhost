@@ -203,7 +203,7 @@ Pour les configurations de développement, vous pouvez également définir des c
 ### Gestion des messages
 - `max_message_chars`
   - Type: `int`
-  - Défaut: `30000`
+  - Défaut: `40000`
   - Description: Le nombre approximatif maximum de caractères dans le contenu d'un événement inclus dans le prompt au LLM. Les observations plus grandes sont tronquées.
 
 - `max_input_tokens`

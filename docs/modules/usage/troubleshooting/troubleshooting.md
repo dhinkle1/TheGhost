@@ -55,7 +55,7 @@ To fix this:
        -e SANDBOX_RUNTIME_CONTAINER_IMAGE=docker.all-hands.dev/all-hands-ai/runtime:latest \
        -v /var/run/docker.sock:/var/run/docker.sock \
        -v ~/.openhands-state:/.openhands-state \
-       -p 3000:3000 \
+       -p 4000:4000 \
        -p 41234:41234 \
        --add-host host.docker.internal:host-gateway \
        --name openhands-app \

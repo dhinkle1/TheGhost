@@ -28,7 +28,7 @@
                 "--reload-exclude",
                 "${workspaceFolder}/workspace",
                 "--port",
-                "3000"
+                "4000"
             ],
             "justMyCode": false
         }

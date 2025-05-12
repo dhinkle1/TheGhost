@@ -203,7 +203,7 @@ Para configurações de desenvolvimento, você também pode definir configuraç�
 ### Manipulação de Mensagens
 - `max_message_chars`
   - Tipo: `int`
-  - Padrão: `30000`
+  - Padrão: `40000`
   - Descrição: O número máximo aproximado de caracteres no conteúdo de um evento incluído no prompt para o LLM. Observações maiores são truncadas.
 
 - `max_input_tokens`

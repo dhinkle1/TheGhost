@@ -65,13 +65,13 @@ docker run -it --rm --pull=always \
     -e LOG_ALL_EVENTS=true \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v ~/.openhands-state:/.openhands-state \
-    -p 3000:3000 \
+    -p 4000:4000 \
     --add-host host.docker.internal:host-gateway \
     --name openhands-app \
     docker.all-hands.dev/all-hands-ai/openhands:0.37
 ```
 
-TheGhostは http://localhost:3000 で実行されています！
+TheGhostは http://localhost:4000 で実行されています！
 
 また、[TheGhostをローカルファイルシステムに接続](https://docs.all-hands.dev/modules/usage/runtimes/docker#connecting-to-your-filesystem)したり、
 TheGhostを[ヘッドレスモード](https://docs.all-hands.dev/modules/usage/how-to/headless-mode)でスクリプト実行したり、

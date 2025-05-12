@@ -58,13 +58,13 @@ docker run -it --rm --pull=always \
     -e LOG_ALL_EVENTS=true \
     -v /var/run/docker.sock:/var/run/docker.sock \
     -v ~/.openhands-state:/.openhands-state \
-    -p 3000:3000 \
+    -p 4000:4000 \
     --add-host host.docker.internal:host-gateway \
     --name openhands-app \
     docker.all-hands.dev/all-hands-ai/openhands:0.37
 ```
 
-You'll find TheGhost running at [http://localhost:3000](http://localhost:3000)!
+You'll find TheGhost running at [http://localhost:4000](http://localhost:4000)!
 
 When you open the application, you'll be asked to choose an LLM provider and add an API key.
 [Anthropic's Claude 3.7 Sonnet](https://www.anthropic.com/api) (`anthropic/claude-3-7-sonnet-20250219`)

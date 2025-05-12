@@ -108,7 +108,7 @@ host is connected to. For a more secure setup:
 
    ```bash
    docker run # ... \
-       -p 127.0.0.1:3000:3000 \
+       -p 127.0.0.1:4000:4000 \
    ```
 
    This ensures that the TheGhost web interface is only accessible from the local machine, not from other machines on the network.
