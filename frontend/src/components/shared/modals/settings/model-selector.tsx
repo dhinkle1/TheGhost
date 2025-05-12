@@ -7,7 +7,12 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { I18nKey } from "#/i18n/declaration";
 import { mapProvider } from "#/utils/map-provider";
-import { VERIFIED_MODELS, VERIFIED_PROVIDERS } from "#/utils/verified-models";
+import {
+  VERIFIED_MODELS,
+  VERIFIED_PROVIDERS,
+  VERIFIED_OPENAI_MODELS,
+  VERIFIED_ANTHROPIC_MODELS,
+} from "#/utils/verified-models";
 import { extractModelAndProvider } from "#/utils/extract-model-and-provider";
 
 interface ModelSelectorProps {
@@ -66,6 +71,13 @@ export function ModelSelector({
   };
 
   const { t } = useTranslation();
+
+  // Determine which models are verified for the selected provider
+  const verifiedModelList = React.useMemo(() => {
+    if (selectedProvider === "openai") return VERIFIED_OPENAI_MODELS;
+    if (selectedProvider === "anthropic") return VERIFIED_ANTHROPIC_MODELS;
+    return VERIFIED_MODELS;
+  }, [selectedProvider]);
 
   return (
     <div className="flex w-[680px] justify-between gap-[46px]">
@@ -148,14 +160,14 @@ export function ModelSelector({
         >
           <AutocompleteSection title={t(I18nKey.MODEL_SELECTOR$VERIFIED)}>
             {models[selectedProvider || ""]?.models
-              .filter((model) => VERIFIED_MODELS.includes(model))
+              .filter((model) => verifiedModelList.includes(model))
               .map((model) => (
                 <AutocompleteItem key={model}>{model}</AutocompleteItem>
               ))}
           </AutocompleteSection>
           <AutocompleteSection title={t(I18nKey.MODEL_SELECTOR$OTHERS)}>
             {models[selectedProvider || ""]?.models
-              .filter((model) => !VERIFIED_MODELS.includes(model))
+              .filter((model) => !verifiedModelList.includes(model))
               .map((model) => (
                 <AutocompleteItem
                   data-testid={`model-item-${model}`}
