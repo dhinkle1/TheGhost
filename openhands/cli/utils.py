@@ -99,10 +99,14 @@ def extract_model_and_provider(model: str) -> ModelInfo:
 
     if len(split) == 1:
         # no "/" or "." separator found
-        if split[0] in VERIFIED_OPENAI_MODELS:
-            return ModelInfo(provider='openai', model=split[0], separator='/')
-        if split[0] in VERIFIED_ANTHROPIC_MODELS:
-            return ModelInfo(provider='anthropic', model=split[0], separator='/')
+        token = split[0]
+        # Recognize base and versioned OpenAI models (e.g. gpt-4.1, gpt-4.1-mini, gpt-4.1-mini-2025-04-14)
+        is_base_openai = token in VERIFIED_OPENAI_MODELS
+        is_versioned_openai = any(token.startswith(base + "-") for base in VERIFIED_OPENAI_MODELS)
+        if is_base_openai or is_versioned_openai:
+            return ModelInfo(provider='openai', model=token, separator='/')
+        if token in VERIFIED_ANTHROPIC_MODELS:
+            return ModelInfo(provider='anthropic', model=token, separator='/')
         # return as model only
         return ModelInfo(provider='', model=model, separator='')
 

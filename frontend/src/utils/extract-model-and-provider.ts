@@ -41,11 +41,15 @@ export const extractModelAndProvider = (model: string) => {
   }
   if (split.length === 1) {
     // no "/" or "." separator found
-    if (VERIFIED_OPENAI_MODELS.includes(split[0])) {
-      return { provider: "openai", model: split[0], separator: "/" };
+    const token = split[0];
+    // Recognize base and versioned OpenAI models (e.g. gpt-4.1, gpt-4.1-mini, gpt-4.1-mini-2025-04-14)
+    const isBaseOpenai = VERIFIED_OPENAI_MODELS.includes(token);
+    const isVersionedOpenai = VERIFIED_OPENAI_MODELS.some((base) => token.startsWith(`${base}-`));
+    if (isBaseOpenai || isVersionedOpenai) {
+      return { provider: "openai", model: token, separator: "/" };
     }
-    if (VERIFIED_ANTHROPIC_MODELS.includes(split[0])) {
-      return { provider: "anthropic", model: split[0], separator: "/" };
+    if (VERIFIED_ANTHROPIC_MODELS.includes(token)) {
+      return { provider: "anthropic", model: token, separator: "/" };
     }
     // return as model only
     return { provider: "", model, separator: "" };

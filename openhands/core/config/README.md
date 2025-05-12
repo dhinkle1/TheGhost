@@ -1,4 +1,4 @@
-# Configuration Management in TheGhost
+# Co. I am not able to nfiguration Management in TheGhost
 
 ## Overview
 

@@ -7,7 +7,6 @@
 
 
 <div align="center">
-  <a href="https://github.com/All-Hands-AI/TheGhost/graphs/contributors"><img src="https://img.shields.io/github/contributors/All-Hands-AI/TheGhost?style=for-the-badge&color=blue" alt="Contributors"></a>
   <a href="https://github.com/All-Hands-AI/TheGhost/stargazers"><img src="https://img.shields.io/github/stars/All-Hands-AI/TheGhost?style=for-the-badge&color=blue" alt="Stargazers"></a>
   <a href="https://github.com/All-Hands-AI/TheGhost/blob/main/LICENSE"><img src="https://img.shields.io/github/license/All-Hands-AI/TheGhost?style=for-the-badge&color=blue" alt="MIT License"></a>
   <br/>
